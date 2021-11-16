@@ -1,0 +1,27 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int idade, qtd_pessoas=0, soma=0;
+
+int main()
+
+{
+
+
+while(1){
+    printf("Digite a sua idade (-1 para encerrar): ");
+    scanf("%d", &idade);
+    if (idade == -1) break;
+    if (idade < -1){
+        printf("Digite uma idade valida\n");
+    } else {
+        soma += idade;
+        qtd_pessoas++;
+    }
+}
+printf("A idade media do grupo e: %.1f\n", (float) soma / qtd_pessoas);
+printf("O numero de pessoas no grupo e: %d\n", qtd_pessoas);
+
+    return 0;
+}
+
